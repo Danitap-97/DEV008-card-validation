@@ -1,0 +1,59 @@
+/*estilos para el formulario*/
+body {
+background:url(images/2WZJJNO2FFD33BIZ3GWA5VPAEE.jpg);
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    background:rgb(51, 50, 50) ;
+    padding: 5px;
+    width:60.9%;
+}
+.imagendelformulario{
+    display: flex;
+}
+.contenedor-principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.formulario-tarjeta {
+display: flex;
+flex-direction: column;
+
+background:#6f6faa;
+width: 100%;
+max-width: 500px;
+padding: 30px 30px 30px 30px;
+border-radius: 15px;
+}
+/*para el espacio entre cada casilla*/
+.formulario-tarjeta label{
+    display: block;
+    margin: 5px;
+}
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar {
+border: 2px solid #35f1f1;
+width: 100%;
+height: 50px;
+border-radius: 15px;
+
+}
+.formulario-tarjeta .flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+.formulario-tarjeta .expira{
+    width: 100%;
+}
+.formulario-tarjeta .grupo-select{
+    width: 100%;
+    margin-right: 15px;
+}
+.formulario-tarjeta .btn-enviar{
+    background: hsl(285, 46%, 28%);
+}

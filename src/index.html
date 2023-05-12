@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card-validation</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="contenedor-principal">
+    <header>
+        <h1>CONCERT</h1>
+    </header>
+    <section>
+        <p>para poder disfrutar de tu concierto favorito necesitas primero validar tu tarjeta de credito</p>
+    </section>
+    <h2>AQUI PUEDES VALIDAR TU TARJETA DE CREDITO</h2>
+
+    <section >
+        <p>El validador de la tarjeta de crédito
+             es una herramienta en línea gratuita
+            que le permite validar los detalles de la tarjeta de crédito, 
+            como la validación de Luhn,
+            el titular de la tarjeta, y el ccv.</p>
+    </section>
+
+    <div class="imagendelformulario">
+        <img src="images/img-card.jpg">
+        <!--formulario de tarjeta-->
+        <form action="" class="formulario-tarjeta " id="formulario-tarjeta">
+            <div class="contenedor">
+                <label for="numero">Numero de Tarjeta</label>
+                <input type="text" id="numero" maxlength="19" autocomplete="off" required>
+            </div>
+            <div class="contenedor">
+                <label for="titular">Nombre del Titular</label>
+                <input type="text" id="titular" autocomplete="off" required>
+            </div>
+            <div class="flexbox">
+                <div class="expira">
+                    <label for="seleccion-mes">Expiracion</label>
+                    <div class="flexbox">
+                        <div class="grupo-select">
+                            <select name="mes" id="mes">
+
+                                <option disabled selected>Mes</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-select">
+                            <select name="year" id="year">
+                                <option disabled selected>Año</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccv">
+                    <label for="ccv">CCV</label>
+                    <input type="text" id="ccv" maxlength="3" required>
+                </div>
+            </div>
+            <button type="submit" class="btn-enviar" id="boton">validar</button>
+        </form>
+    </div>
+
     <script src="index.js" type="module"></script>
-  </body>
+    <footer>abril 2023 DT</footer>
+</body>
+
 </html>
