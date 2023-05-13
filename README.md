@@ -16,4 +16,5 @@ https://www.aprendejavascript.dev/
 
 Authors
 [@Danitap-97]
+https://danitap-97.github.io/DEV008-card-validation/
 
