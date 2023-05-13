@@ -4,7 +4,6 @@ background:url(images/2WZJJNO2FFD33BIZ3GWA5VPAEE.jpg);
 color: white;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 section {
     background:rgb(51, 50, 50) ;
     padding: 5px;
@@ -17,12 +16,10 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 .formulario-tarjeta {
 display: flex;
 flex-direction: column;
-
 background:#6f6faa;
 width: 100%;
 max-width: 500px;

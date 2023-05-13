@@ -59,12 +59,17 @@ const validator = {
   maskify: (numero) => {
     //se divide el objeto en un array
     const numeroArray = convertirArray(numero);
-    const snumeroArray = numeroArray.slice(-4);
+    const numeroArrayInvertido = invertirarray(numeroArray);
     let numerocubierto = "";
     //se crea ciclo para enmascarar
-    for (let i = 0; i < numeroArray.length; i++) {
-      numerocubierto += "#"
+    for (let i = 0; i < numeroArrayInvertido.length; i++) {
+      if(i <= 3) {
+        numerocubierto += numeroArrayInvertido[i].toString();
+      } else {
+        numerocubierto += "#"
+      }
     }
-    return numerocubierto;
+    const arrayNumeroCubierto = invertirarray(numerocubierto.split(''));
+    return arrayNumeroCubierto.join('');
   }
 }; export default validator;
