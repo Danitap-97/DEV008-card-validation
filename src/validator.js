@@ -56,20 +56,21 @@ const validator = {
     }
   },
   //creo un objeto con su propiedad numero
-  maskify: (numero) => {
+  maskify: (numero) => { 
     //se divide el objeto en un array
-    const numeroArray = convertirArray(numero);
-    const numeroArrayInvertido = invertirarray(numeroArray);
+    const numeroArray = convertirArray(numero);  // '341256'  => [3, 4, 1, 2, 5, 6]
+    const numeroArrayInvertido = invertirarray(numeroArray); // [3, 4, 1, 2, 5, 6] => [6, 5, 2, 1, 4, 3]
     let numerocubierto = "";
     //se crea ciclo para enmascarar
     for (let i = 0; i < numeroArrayInvertido.length; i++) {
+      // deja libre los primeros 4 digitos
       if(i <= 3) {
         numerocubierto += numeroArrayInvertido[i].toString();
       } else {
         numerocubierto += "#"
       }
     }
-    const arrayNumeroCubierto = invertirarray(numerocubierto.split(''));
-    return arrayNumeroCubierto.join('');
+    const arrayNumeroCubierto = invertirarray(numerocubierto.split(''));// '6521##' => con split [6, 5, 2, 1, #, #]  => [#, #, 1, 2, 5, 6,]
+    return arrayNumeroCubierto.join(''); // '##1256'
   }
 }; export default validator;
